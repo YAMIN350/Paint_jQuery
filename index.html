@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="size">
+        <input type="number" class="form-control col-md-3 input_size" placeholder="largeur" id="line_x" />
+        <input type="number" class="form-control col-md-3  input_size" placeholder="hauteur" id="line_y" />
+        <button type="submit" class="btn btn-light input_size" id="choose_canvas">Valider</button>
+    </div>
+
+    <div id="save_import">
+        <button type="submit" class="btn btn-warning" id="save">Sauvegarder</button>
+        <input type="file" id="inp" />
+    </div>
+
+    <div id="outils" class="col-md-12 container">
+        <button type="submit" class="btn btn-light" id="background">Background</button>
+        <button class="button_outils" id="pen"><img src="images/pen.png" class="pen" /></button>
+        <button class="button_outils" id="gomme"><img src="images/gomme.png" class="gomme" /></button>
+        <button class="button_outils" id="line"><i class="fas fa-grip-lines icons line"></i></button>
+        <button class="button_outils" id="rectangle"><img src="images/rectangle.png" class="rectangle" /></button>
+        <button class="button_outils" id="rectangleFilled"><img src="images/rectangleFilled.png" class="rectangleFilled" /></button>
+        <button class="button_outils" id="circle"><img src="images/cercle.png" class="circle" /></button>
+        <button class="button_outils" id="circleFilled"><img src="images/circle_filled.png" class="circleFilled" /></</button>
+        <button class="button_outils" id="smyle"><img src="images/smyle.png" class="smyle" /></button>
+        <button class="button_outils" id="carre"><img src="images/carre.png" class="carre" /><i class="far fa-rectangle-wide"></i></button>
+
+        <input type="color" />
+        <input type="range" min="1" max="60" />
+        <button type="submit" class="btn btn-danger" id="eraser">Reset</button>
+        <button type="submit" class="btn btn-light" id="text">Text</button>
+    </div>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.4.6/fabric.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="paint.js"></script>
+
+</body>
+</html>

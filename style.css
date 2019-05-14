@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.controls {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.controls input {
+    float: left;
+    margin-right: 10px;
+}
+
+#canvas {
+    background: white;
+    cursor: pointer;
+    margin-top: 3%;
+}
+#outils {
+    background-color: rgba(120, 123, 183, 0.8);
+    padding: 2em;
+    border-radius: 30px;
+}
+.button_outils{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #3071A9;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+input[type=file] {
+   border-radius: 8px;
+}
+
+.size {
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.input_size {
+    margin: 2%;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.icons {
+    zoom: 1.5;
+}
+
+.smyle {
+    width: 59%;
+}
+
+.rectangle {
+    width: 59%;
+}
+.rectangleFilled {
+    width: 80%;
+    margin-top: -5px;
+}
+
+#save_import {
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+#save {
+    margin-right: 25%;
+}
+
+.gomme {
+    width: 65%;
+}
+
+.pen {
+    width: 50%;
+}
+
+.circle {
+    width: 55%;
+}
+
+.circleFilled {
+    width: 60%;
+}
+
+.carre {
+    width: 60%;
+}
+
+/*#pen {*/
+/*    width: 10%;*/
+/*}*/
+/*#gomme {*/
+/*    width: 10%;*/
+/*}*/
+/*#line {*/
+/*    width: 10%;*/
+/*}*/
+
+/*#rectangle {*/
+/*    width: 10%;*/
+/*}*/
+
+/*#rectangleFilled {*/
+/*    width: 15%;*/
+/*}*/
+
+/*#circle {*/
+/*    width: 10%;*/
+/*}*/
+
+/*#triangle {*/
+/*    width: 10%;*/
+/*}*/
